@@ -7,7 +7,7 @@ export default function Footer() {
           <h3>Contact us</h3>
           <p>Address</p>
           <p>Cell Phone</p>
-          <span>All Rights Reserved | CopyRights @ 202X</span>
+          <span>All Rights Reserved | CopyRights @ 2024</span>
       </footer>
     </Fragment>
   )

@@ -5,8 +5,8 @@ import Events from '../pages/Events'
 import AboutUs from '../pages/AboutUs'
 import ContactUs from '../pages/ContactUs'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 export default function Routing() {
     return (
