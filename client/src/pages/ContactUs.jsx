@@ -5,7 +5,17 @@ export default function ContactUs() {
     <Fragment>
         <section>
           <h4>Contact Us</h4>
-          <p>This is the Contact Us Page.</p>
+          <ul>
+            <li>
+              <div className="map">
+              </div>
+            </li>
+            <li>
+              <div className="mail">
+                
+              </div>
+            </li>
+          </ul>
         </section>
     </Fragment>
   )
