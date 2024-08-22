@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../assets/logo.svg'
 
 
 export default function Header() {
@@ -8,8 +9,14 @@ export default function Header() {
       <header>
         <nav>
           <ul>
-            <li><Link to='/dashboard'><img src="#" alt="Church_logo" /></Link></li>
-            <li><span>Greetings!</span></li>
+            <li>
+              <Link to='/dashboard'>
+                <section className='logo'>
+                  <img src="#"alt="Church_logo" className='logo_img' />
+                </section>
+              </Link>
+            </li>
+            <li><span>Welcome!</span></li>
           </ul>
         </nav>
       </header>

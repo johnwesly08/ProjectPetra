@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Oswald:wght@200..700&display=swap');
 
 * {
-  margin:0px;
+  margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   list-style: none;
@@ -73,7 +73,7 @@ header ul li span {
 .navbar ul li:hover {
   background-color: #023d8abd;
   padding: 9.5px 90px;
-  
+
 }
 
 /* <------------- EVENTS PAGE --------------> */
@@ -85,20 +85,72 @@ header ul li span {
 }
 
 .Events .latest_stream {
-  width: 100vw;
-  height: 50%;
+  height: auto;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
+.Events .latest_stream .ytchannel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+.Events .latest_stream h4 {
+  font-size: 30px;
+}
+
+.Events .latest_stream h4 a {
+  text-decoration: none;
+  color: #171717;
+} 
+
+.Events .latest_stream h4 a:hover{
+  color: #cc0007
+} 
+
+.Events .latest_stream h4 a:active{
+  color: #171717
+} 
+
+.Events .latest_stream .ytlink {
+  display: flex;
+}
+
+.Events .latest_stream .ytlink iframe{
+  padding: 10px;
+  border-style: none;
+}
+
+.Events .latest_stream .ytlink .background{
+  background-color: orange;
+}
+
+.Events .latest_stream .ytlink  p{
+  background-color: pink;
+}
+
+
+/* <------------- LOGO --------------> */
+
+.logo {
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  position: relative;
+  z-index: 5;
+}
+
+.logo img {
+  position: relative;
+  z-index: 100;
+}
 
 /* <------------- FOOTER --------------> */
 footer {
   width: 100vw;
   Height: 8rem;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   display: flex;
   flex-direction: column;
