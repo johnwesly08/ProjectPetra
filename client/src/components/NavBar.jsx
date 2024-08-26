@@ -1,19 +1,67 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { FaBarsStaggered } from "react-icons/fa6";
+import logo from '../assets/logo.png';
+import { GrClose } from "react-icons/gr";
 
-export default function NavBar() {
+function Navbar() {
+    const [menuBtn, setMenuBtn] = useState(true);
+
     return (
         <Fragment>
-            <div className="navbar">
+            <header>
+                <div className="header">
+                    <img src={logo} alt="logo" className='header_logo'/>
+                    <p>Welcome</p>
+                </div>
+
                 <nav>
-                    <ul className="navList">
-                        <Link to='/dashboard'><li>Dashboard</li></Link>
-                        <Link to='/events'><li>Events</li></Link>
-                        <Link to='/about'><li>About us</li></Link>
-                        <Link to='/contact'><li>Contact us</li></Link>
+                    <input type="checkbox" id="check" onClick={() => setMenuBtn(!menuBtn)} />
+                    <label htmlFor='check' class="overlay"></label>
+                    <label htmlFor='check' class="checkbtn">
+                        {
+                            (menuBtn) ? <FaBarsStaggered /> : <GrClose />
+                        }
+                    </label>
+
+                    <Link to={'/'}>
+                        <img src={logo} alt="gd" className="logo nav_logo" />
+                    </Link>
+
+                    <ul>
+                        <li>
+                            <Link
+                                to="/"
+                            >
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/events"
+                            >
+                                Events
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/about"
+                            >
+                                About Us
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/contact"
+                            >
+                                Contact Us
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
-            </div>
+            </header>
         </Fragment>
     )
 }
+
+export default Navbar

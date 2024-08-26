@@ -3,7 +3,7 @@ import React, { Fragment } from 'react'
 export default function Events() {
     return (
         <Fragment>
-            <section className="Events">
+            <section className="events_page page">
                 <section className="latest_stream">
                     <h4 className='ytchannel'>To catch us live on<a href="https://www.youtube.com/@IntoHisLikeness">&nbsp;Youtube</a></h4>
                     <h4>OUR LATEST SERMON</h4>
