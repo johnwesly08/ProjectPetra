@@ -4,12 +4,12 @@ export default function AboutUs() {
     return (
         <Fragment>
             <section className='about_page page'>
-                <h4>About Us</h4>
+                <h1 className='title'>About Us</h1>
                 <div className="who_we_are">
-                    <h4>WHO WE ARE</h4>
+                    <h1 className='title'>Who we are</h1>
                 </div>
                 <div className="our_vision">
-                    <h4>OUR VISION</h4>
+                    <h1 className='title'>Our vision</h1>
                 </div>
             </section>
         </Fragment>

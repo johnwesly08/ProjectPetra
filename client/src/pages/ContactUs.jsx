@@ -48,7 +48,7 @@ export default function ContactUs() {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10092.245476306814!2d76.98117310739926!3d11.088547754540611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f792636f82b5%3A0xdc86449e9fb48675!2sKGiSL%20Institute%20of%20Technology%20(Autonomous)!5e0!3m2!1sen!2sin!4v1724661685107!5m2!1sen!2sin" style={{ border: 0 }} loading="lazy"></iframe>
         </div>
         <div className="mail">
-          <h4>Contact Us</h4>
+          <h4 className='title'>Contact Us</h4>
           <form onSubmit={(e) => handleSubmit(e)}>
             {
               (msg.trim() !== "") ? <h1 className="msg">{msg}</h1> : null
@@ -88,7 +88,8 @@ export default function ContactUs() {
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, [e.target.id]: e.target.value })}
             ></textarea>
-            <input type="submit" value="Send" onClick={(e) => handleSubmit(e)} />
+            <input type="submit" value="Send" onClick={(e) => handleSubmit(e)} className='btn'
+            />
           </form>
         </div>
       </section>
