@@ -12,7 +12,7 @@ export default function Header() {
             <li>
               <Link to='/dashboard'>
                 <section className='logo'>
-                  <img src="#"alt="Church_logo" className='logo_img' />
+                  <img src={logo} alt="Church_logo" className='logo_img' />
                 </section>
               </Link>
             </li>
