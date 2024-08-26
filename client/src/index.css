@@ -32,11 +32,31 @@ body {
 }
 
 .page {
+  padding-top: 10rem;
   width: 80%;
   margin: 0px auto;
   height: auto;
   min-height: 100vh;
   overflow: hidden;
+}
+
+.title {
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--background);
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  transition: all .2s ease;
+}
+
+.btn:hover {
+  background-color: var(--secondary);
 }
 
 .header {
@@ -100,7 +120,7 @@ nav ul li a {
   margin-right: 12px;
   padding: 10px;
   color: var(--background);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1.1px;
 }
 
@@ -122,10 +142,19 @@ nav ul li a {
 }
 
 @media screen and (max-width:972px) {
+  .header_logo {
+    display: none;
+  }
+
+  .header p {
+    width: 100%;
+    text-align: center;
+  }
+
   .nav_logo {
     display: block;
-    background-color: red;
   }
+
 
   nav ul {
     flex-direction: column;
@@ -180,6 +209,14 @@ nav ul li a {
     width: 70%;
     right: -70%;
   }
+}
+
+/* dashboard */
+.dashboard_component {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Footer */
