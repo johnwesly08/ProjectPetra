@@ -3,7 +3,7 @@ import React, { Fragment } from 'react'
 export default function AboutUs() {
     return (
         <Fragment>
-            <section className='about'>
+            <section className='about_page page'>
                 <h4>About Us</h4>
                 <div className="who_we_are">
                     <h4>WHO WE ARE</h4>
