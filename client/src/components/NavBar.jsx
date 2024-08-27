@@ -1,24 +1,25 @@
 import React, { Fragment, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FaBarsStaggered } from "react-icons/fa6";
 import logo from '../assets/logo.png';
 import { GrClose } from "react-icons/gr";
 
 function Navbar() {
     const [menuBtn, setMenuBtn] = useState(true);
+    const nav = useNavigate();
 
     return (
         <Fragment>
             <header>
                 <div className="header">
-                    <img src={logo} alt="logo" className='header_logo'/>
-                    <p>Welcome</p>
+                    <img src={logo} alt="logo" className='header_logo' onClick={() => nav('/')} />
+                    <p>Christ The Living Petra</p>
                 </div>
 
                 <nav>
                     <input type="checkbox" id="check" onClick={() => setMenuBtn(!menuBtn)} />
-                    <label htmlFor='check' class="overlay"></label>
-                    <label htmlFor='check' class="checkbtn">
+                    <label htmlFor='check' className="overlay"></label>
+                    <label htmlFor='check' className="checkbtn">
                         {
                             (menuBtn) ? <FaBarsStaggered /> : <GrClose />
                         }

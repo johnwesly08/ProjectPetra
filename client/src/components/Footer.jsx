@@ -1,6 +1,9 @@
 // src/Footer.js
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebook } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { BsYoutube } from "react-icons/bs";
+
 
 const Footer = () => {
   return (
@@ -15,13 +18,13 @@ const Footer = () => {
           <h1 className="title">Social</h1>
           <div className="links">
             <a href='https://facebook.com' target='_blank' rel='noopener noreferrer' aria-label='Facebook'>
-              <FaFacebookF className='fa' />
+              <FaFacebook className='fa' />
             </a>
-            <a href='https://twitter.com' target='_blank' rel='noopener noreferrer' aria-label='Twitter'>
-              <FaTwitter className='fa' />
+            <a href='https://instagram.com' target='_blank' rel='noopener noreferrer' aria-label='Instagram'>
+              <BsInstagram className='fa' />
             </a>
             <a href='https://youtube.com' target='_blank' rel='noopener noreferrer' aria-label='YouTube'>
-              <FaYoutube className='fa' />
+              <BsYoutube className='fa' />
             </a>
           </div>
         </div>
