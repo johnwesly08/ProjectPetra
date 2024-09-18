@@ -6,31 +6,31 @@ export default function DashboardPage() {
     <Fragment>
       <section className='dashboard_page page'>
         <div className="dashboard_component">
-          <h1 className="title">Church Name</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis facilis incidunt, commodi ratione, harum doloremque ducimus quibusdam pariatur enim repellendus repellat adipisci blanditiis sed? Placeat adipisci et rem vero modi.</p>
+          <h1 className="title main">Christ the Living Petra Church</h1>
+          <p className='pmain'>“….and on this rock I will build My church, and the gates of Hades shall not prevail against it.” Matthew 16:18</p>
         </div>
 
         <div className="dashboard_component">
           <h1 className="title">Events</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur a mollitia recusandae in asperiores ducimus unde quo voluptates, obcaecati enim rem iste delectus magni sint consequatur nihil expedita quam dolorum.</p>
+          <p>"Stay updated on our upcoming services and gatherings by visiting our Events page."</p>
           <Link to={'/events'}>
-            <button className="btn">Events</button>
+            <button className="btn">Happenings</button>
           </Link>
         </div>
 
         <div className="dashboard_component">
           <h1 className="title">About Us</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur a mollitia recusandae in asperiores ducimus unde quo voluptates, obcaecati enim rem iste delectus magni sint consequatur nihil expedita quam dolorum.</p>
+          <p>"To learn more about our mission, values, and community, visit our About Us page."</p>
           <Link to={'/about'}>
-            <button className="btn">About Us</button>
+            <button className="btn">Learn More</button>
           </Link>
         </div>
 
         <div className="dashboard_component">
           <h1 className="title">Contact Us</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur a mollitia recusandae in asperiores ducimus unde quo voluptates, obcaecati enim rem iste delectus magni sint consequatur nihil expedita quam dolorum.</p>
+          <p>"For prayer requests, support, or to connect with us, please visit our Contact Us page."</p>
           <Link to={'/contact'}>
-            <button className="btn">Contact Us</button>
+            <button className="btn">Get in Touch</button>
           </Link>
         </div>
       </section>

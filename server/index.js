@@ -1,5 +1,3 @@
-// SMTP - Simple Mail Transfer Protocol
-
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -16,9 +14,5 @@ app.use(cors({origin: "*", Credential: true, methods: ["GET", "POST", "PUT", "DE
 app.listen(PORT, () => {
     console.log(`The Server was Listening\nhttp://localhost:${PORT}`);
 });
-
-// app.use("/", async (req, res) => {
-//     return res.json({"Message": "Hello World"}), 200;
-// });
 
 app.use("/api", appRouters);

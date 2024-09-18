@@ -45,7 +45,7 @@ export default function ContactUs() {
     <Fragment>
       <section className='contact_page page'>
         <div className="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10092.245476306814!2d76.98117310739926!3d11.088547754540611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f792636f82b5%3A0xdc86449e9fb48675!2sKGiSL%20Institute%20of%20Technology%20(Autonomous)!5e0!3m2!1sen!2sin!4v1724661685107!5m2!1sen!2sin" style={{ border: 0 }} loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2413.457341905416!2d11.657471775912638!3d48.05316455703465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479de0d034ae2edb%3A0xfb9eec2d4909339a!2sAda-Lovelace-Stra%C3%9Fe%2014%2C%2085521%20Ottobrunn%2C%20Germany!5e1!3m2!1sen!2sin!4v1726600033826!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" style={{ border: 0 }} loading="lazy"></iframe>
         </div>
         <div className="mail">
           <h4 className='title'>Contact Us</h4>
