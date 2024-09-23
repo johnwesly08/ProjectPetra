@@ -13,7 +13,7 @@ export default function Events() {
                     </div>
                     <div className="right">
                         <p className="sermonContent">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, exercitationem! Error, corrupti ad quisquam aperiam odio perspiciatis aliquam quas nisi expedita sequi corporis ipsam pariatur id dolor fuga sint at amet repudiandae sunt, nesciunt hic. Doloribus, eos ex saepe reiciendis suscipit exercitationem nemo eum quisquam blanditiis ipsa veniam at officia.
+                        Join us as we delve into this week’s sermon. Drawing from scripture and real-life applications, this sermon offers inspiring insights and spiritual guidance to help you navigate your daily walk with God. Whether you were present for the service or want to revisit the message, you can watch or listen to the full sermon here. Be encouraged, uplifted, and strengthened in your faith!
                         </p>
                         <h1 className='ytchannel'>To catch us live on <a href="https://www.youtube.com/@IntoHisLikeness">Youtube</a></h1>
                     </div>

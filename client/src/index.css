@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* font-family: "Dancing Script", cursive; */
 /* font-family: "Open Sans", system-ui; */
@@ -45,7 +45,7 @@ body {
 .title {
   color: var(--primary);
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .btn {
@@ -54,8 +54,8 @@ body {
   border: none;
   outline: none;
   padding: 8px 20px;
-  transition: all .2s ease;
-  border-radius: 4px;
+  transition: all 0.2s ease;
+  border-radius: 10px;
 }
 
 .btn:hover {
@@ -74,6 +74,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 2rem;
+  cursor: default;
 }
 
 .header p {
@@ -94,7 +95,7 @@ nav {
   position: fixed;
   top: 70px;
   left: 0;
-  border-bottom: 4px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
 }
 
 .logo {
@@ -116,8 +117,8 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding: 4px 20px;
-  border-radius: 4px;
+  padding: 10px 30px;
+  border-radius: 10px;
   transition: all 0.1s linear;
 }
 
@@ -133,7 +134,7 @@ nav ul li:hover a {
   nav ul li:hover {
     background-color: var(--primary);
   }
-  
+
   nav ul li:hover a {
     color: var(--background);
   }
@@ -164,7 +165,7 @@ nav ul li a {
   display: none;
 }
 
-@media screen and (max-width:972px) {
+@media screen and (max-width: 972px) {
   .header_logo {
     display: none;
   }
@@ -178,7 +179,6 @@ nav ul li a {
     display: block;
   }
 
-
   nav ul {
     flex-direction: column;
     position: absolute;
@@ -191,7 +191,8 @@ nav ul li a {
     background-color: var(--primary);
     transition: all 0.6s ease-out;
     z-index: 1000;
-    box-shadow: inset 2px 2px 5px 1px var(--primary), inset -2px -2px 40px 1px var(--primary);
+    box-shadow: inset 2px 2px 5px 1px var(--primary),
+      inset -2px -2px 40px 1px var(--primary);
     border-radius: 5px;
     z-index: 2;
   }
@@ -218,11 +219,11 @@ nav ul li a {
     right: 0;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     right: 10px;
   }
 
-  #check:checked~.overlay {
+  #check:checked ~ .overlay {
     display: block;
   }
 }
@@ -239,12 +240,31 @@ nav ul li a {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
+  cursor: default;
+}
+
+.dashboard_component .main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.dashboard_component .pmain {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
 }
 
 .dashboard_component a {
   width: 120px;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .dashboard_component a .btn {
@@ -272,35 +292,47 @@ nav ul li a {
 
 .contact_page .mail {
   width: 40%;
-  height: 70vh;
+  height: auto;
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  border: 3px solid var(--accent);
+  padding: 10px 10px;
+  margin-left: 70px;
+  border-radius: 10px;
+  cursor: default;
 }
 
 .contact_page .mail form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   margin-top: 20px;
-  width: 100%;
+  width: 95%;
 }
 
 .contact_page .mail form input,
 .contact_page .mail form textarea {
-  padding: 4px 10px;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  padding: 10px 10px;
 }
 
 .contact_page .mail form textarea {
   height: 100px;
 }
 
-.contact_page .mail form .btn {
-  padding: 10px 0px;
-}
 
+.contact_page .mail form .btn {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  border-radius: 100px;
+  cursor: pointer;
+}
 
 .contact_page .mail form input[type="text"],
 .contact_page .mail form input[type="email"],
@@ -310,7 +342,7 @@ nav ul li a {
   outline-color: var(--primary);
 }
 
-@media screen and (max-width:972px) {
+@media screen and (max-width: 972px) {
   .contact_page {
     flex-direction: column;
     gap: 40px;
@@ -319,11 +351,17 @@ nav ul li a {
   .contact_page .map,
   .contact_page .mail {
     width: 80%;
+    height: auto;
   }
 
   .contact_page .mail {
-    padding: 0px;
+    padding: 0px auto;
+    margin-left: 0px;
   }
+
+  .contact_page .mail form {
+    width: 90%;
+  } 
 }
 
 /* About Us */
@@ -332,6 +370,19 @@ nav ul li a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  cursor: default;
+}
+
+.about_page .maintitle{
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.about_page .maintitle,
+.about_page .title {
+  color: var(--primary);
+  text-transform: uppercase;
 }
 
 .about_component {
@@ -340,10 +391,12 @@ nav ul li a {
   align-items: center;
   margin: 2rem 0px;
   width: 100%;
+  cursor: default;
 }
 
 .about_component .content .title {
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .about_component:nth-child(odd) .content {
@@ -359,8 +412,8 @@ nav ul li a {
 
 .about_component:nth-child(even) .content {
   order: 2;
+  margin-right: 1rem;
   flex: 1;
-  margin-left: 1rem;
 }
 
 .about_component:nth-child(even) .img_container {
@@ -370,11 +423,12 @@ nav ul li a {
 
 .img_container {
   flex: 1;
-  max-width: 50%;
+  max-width: 60%;
+  min-height: auto;
 }
 
 .img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
@@ -415,18 +469,17 @@ nav ul li a {
   .img_container {
     max-width: 100%;
   }
-  
+
   .our_vision {
     flex-direction: column-reverse;
   }
 }
 
-
 @media (max-width: 480px) {
   .title {
     font-size: 1.5rem;
   }
-  
+
   .desc {
     font-size: 0.875rem;
   }
@@ -434,14 +487,16 @@ nav ul li a {
 
 /* Footer */
 .footer {
-  width: 100%; 
+  width: 100%;
   height: auto;
   background-color: var(--footer-bg);
   margin-top: 2rem;
+  cursor: default;
 }
 
 .footer .footer_main {
   display: flex;
+  margin-left: 10px;
   width: 100%;
 }
 
@@ -449,7 +504,7 @@ nav ul li a {
 .footer .footer_main .social_links {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 55%;
   padding: 20px;
   gap: 10px;
 }
@@ -470,6 +525,7 @@ nav ul li a {
   gap: 20px;
 }
 
+
 .footer .footer_rights {
   width: 100%;
   text-align: center;
@@ -477,16 +533,22 @@ nav ul li a {
 }
 
 @media screen and (max-width: 972px) {
-  .footer .footer_main{
+  .footer .footer_main {
     flex-direction: column;
-    align-items: center;
+    margin-left: 0px;
   }
+
+  .footer .footer_main .contact_info,
+.footer .footer_main .social_links {
+  width: 65%;
+}
 }
 
 /* Events */
 .events_page .main {
   display: flex;
   width: 100%;
+  cursor: default;
 }
 
 .events_page .main .left {
@@ -503,6 +565,7 @@ nav ul li a {
 .events_page .main .left iframe {
   width: 100%;
   height: 50vh;
+  border-radius: 10px;
 }
 
 .events_page .main .right {
@@ -518,19 +581,22 @@ nav ul li a {
   line-height: 30px;
   text-align: justify;
   text-indent: 2rem;
-
 }
 
 .events_page .main .right .ytchannel {
-  text-align: left;
+  text-align: center;
   width: 100%;
   font-weight: 400;
   padding: 10px 0px;
+  margin-top: 10px;
 }
 
 .events_page .main .right .ytchannel a {
   color: var(--primary);
-  text-decoration: underline;
+}
+
+.events_page .main .right .ytchannel a:hover {
+  color: red;
 }
 
 @media screen and (max-width: 972px) {
@@ -547,7 +613,7 @@ nav ul li a {
 
 /* Events lists */
 .events_page .weekEvents {
-  margin: 1.5rem 0rem 0rem; 
+  margin: 1.5rem 0rem 0rem;
   padding: 10px;
 }
 

@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { FaBarsStaggered } from "react-icons/fa6";
-import logo from '../assets/logo.png';
+import logo from '/logo.png';
 import { GrClose } from "react-icons/gr";
 
 function Navbar() {
